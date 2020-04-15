@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/yoyo_motion/static/css/main.5f361e03.chunk.css",
+    "main.js": "/yoyo_motion/static/js/main.b59fd948.chunk.js",
+    "main.js.map": "/yoyo_motion/static/js/main.b59fd948.chunk.js.map",
+    "runtime-main.js": "/yoyo_motion/static/js/runtime-main.e47cffe9.js",
+    "runtime-main.js.map": "/yoyo_motion/static/js/runtime-main.e47cffe9.js.map",
+    "static/css/2.89f067aa.chunk.css": "/yoyo_motion/static/css/2.89f067aa.chunk.css",
+    "static/js/2.fd40f9fd.chunk.js": "/yoyo_motion/static/js/2.fd40f9fd.chunk.js",
+    "static/js/2.fd40f9fd.chunk.js.map": "/yoyo_motion/static/js/2.fd40f9fd.chunk.js.map",
+    "index.html": "/yoyo_motion/index.html",
+    "precache-manifest.dd24baad5f088c826e5ac1276be018e8.js": "/yoyo_motion/precache-manifest.dd24baad5f088c826e5ac1276be018e8.js",
+    "service-worker.js": "/yoyo_motion/service-worker.js",
+    "static/css/2.89f067aa.chunk.css.map": "/yoyo_motion/static/css/2.89f067aa.chunk.css.map",
+    "static/css/main.5f361e03.chunk.css.map": "/yoyo_motion/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.fd40f9fd.chunk.js.LICENSE.txt": "/yoyo_motion/static/js/2.fd40f9fd.chunk.js.LICENSE.txt",
+    "static/media/airbnb.jfif": "/yoyo_motion/static/media/airbnb.7f765d22.jfif",
+    "static/media/icq.jfif": "/yoyo_motion/static/media/icq.47d219ea.jfif",
+    "static/media/logo.png": "/yoyo_motion/static/media/logo.bae79365.png",
+    "static/media/yehonatan.jpg": "/yoyo_motion/static/media/yehonatan.2bd174d7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e47cffe9.js",
+    "static/css/2.89f067aa.chunk.css",
+    "static/js/2.fd40f9fd.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.b59fd948.chunk.js"
+  ]
+}

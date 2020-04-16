@@ -67,11 +67,11 @@ class App extends Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-
+          <Switch>
           <Route path={process.env.PUBLIC_URL + '/yoyo_motion/'} exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text} />} />
           <Route path={process.env.PUBLIC_URL + '/yoyo_motion/portfolio'} render={() => <PortfolioPage title={this.state.portfolio.title} />} />
           <Route path={process.env.PUBLIC_URL + '/yoyo_motion/contact"'}  render={() => <ContactPage title={this.state.contact.title} />} />
-
+          </Switch>
           <Footer />
         </Container>
       </Router>

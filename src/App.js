@@ -68,9 +68,9 @@ class App extends Component {
             </Navbar.Collapse>
           </Navbar>
 
-          <Route path="/" exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text} />} />
-          <Route path="/portfolio" render={() => <PortfolioPage title={this.state.portfolio.title} />} />
-          <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
+          <Route path="/yoyo_motion" exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text} />} />
+          <Route path="/yoyo_motion/portfolio" render={() => <PortfolioPage title={this.state.portfolio.title} />} />
+          <Route path="/yoyo_motion/contact" render={() => <ContactPage title={this.state.contact.title} />} />
 
           <Footer />
         </Container>

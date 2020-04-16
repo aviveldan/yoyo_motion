@@ -24,9 +24,9 @@ class App extends Component {
     this.state = {
       title: 'YoYo Motion',
       headerLinks: [
-        { title: 'דף הבית', path: '/' },
-        { title: 'עבודות', path: '/portfolio' },
-        { title: 'צור קשר', path: '/contact' }
+        { title: 'דף הבית', path: '/yoyo_motion' },
+        { title: 'עבודות', path: '/yoyo_motion/portfolio' },
+        { title: 'צור קשר', path: '/yoyo_motion/contact' }
       ],
       home: {
         title: 'אני גורם לדברים לזוז',

@@ -24,9 +24,9 @@ class App extends Component {
     this.state = {
       title: 'YoYo Motion',
       headerLinks: [
-        { title: 'דף הבית', path: '/yoyo_motion' },
-        { title: 'עבודות', path: '/yoyo_motion/portfolio' },
-        { title: 'צור קשר', path: '/yoyo_motion/contact' }
+        { title: 'דף הבית', path: '/' },
+        { title: 'עבודות', path: '/portfolio' },
+        { title: 'צור קשר', path: '/contact' }
       ],
       home: {
         title: 'אני גורם לדברים לזוז',
@@ -68,9 +68,9 @@ class App extends Component {
             </Navbar.Collapse>
           </Navbar>
 
-          <Route path="/yoyo_motion" exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text} />} />
-          <Route path="/yoyo_motion/portfolio" render={() => <PortfolioPage title={this.state.portfolio.title} />} />
-          <Route path="/yoyo_motion/contact" render={() => <ContactPage title={this.state.contact.title} />} />
+          <Route path={process.env.PUBLIC_URL + '/'} exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text} />} />
+          <Route path={process.env.PUBLIC_URL + '/portfolio'} render={() => <PortfolioPage title={this.state.portfolio.title} />} />
+          <Route path={process.env.PUBLIC_URL + '/contact"'}  render={() => <ContactPage title={this.state.contact.title} />} />
 
           <Footer />
         </Container>

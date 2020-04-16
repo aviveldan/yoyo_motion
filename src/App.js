@@ -61,9 +61,9 @@ class App extends Component {
             <Navbar.Toggle aria-controls='navbar-toggle' />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
-                <Link className="nav-link" to="/">דף הבית</Link>
-                <Link className="nav-link" to="/portfolio">העבודות שלי</Link>
-                <Link className="nav-link" to="/contact">צרו קשר</Link>
+                <Link className="nav-link" to={process.env.PUBLIC_URL +"/"}>דף הבית</Link>
+                <Link className="nav-link" to={process.env.PUBLIC_URL +"/portfolio"}>העבודות שלי</Link>
+                <Link className="nav-link" to={process.env.PUBLIC_URL +"/contact"}>צרו קשר</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>

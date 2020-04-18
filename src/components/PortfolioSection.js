@@ -1,21 +1,22 @@
 
 import React from 'react';
-import { Card, Accordion, Button } from 'react-bootstrap';
+import { Card, Accordion, Button, useAccordionToggle } from 'react-bootstrap';
 import InstagramPosts from './InstagramPosts';
 
 
 function PortfolioSection(props){
+
     return(
-        <Accordion defaultActiveKey="1">
+        <Accordion defaultActiveKey={props.on}>
             <Card>
                 <Card.Header>
-                    <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                    <Accordion.Toggle as={Button} variant="link" eventKey={props.name}>
                         {props.name}
                 </Accordion.Toggle>
                 </Card.Header>
-                <Accordion.Collapse eventKey="0">
+                <Accordion.Collapse eventKey={props.name}>
                     <Card.Body>
-                    <InstagramPosts/>
+                    <InstagramPosts name = {props.name}/>
                         </Card.Body>
                 </Accordion.Collapse>
             </Card>

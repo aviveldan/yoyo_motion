@@ -8,9 +8,8 @@ import InstagramPosts from './InstagramPosts';
 function HomePage(props) {
     return (
         <div>
-            <About />
-            <InstagramPosts/>
-            <Logos />
+            <About handleClick={props.handleClick}/>
+            <Logos handleClick={props.handleClick}/>
         </div>
     );
 }

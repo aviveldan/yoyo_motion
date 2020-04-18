@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import { HashLink as Link } from 'react-router-hash-link';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Figure from 'react-bootstrap/Figure';
 import { Container, Navbar, Nav } from 'react-bootstrap';
@@ -12,8 +12,8 @@ import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import PortfolioPage from './components/PortfolioPage';
 import ContactPage from './components/ContactPage';
-
 import logo from './images/logo.png'
+import NavBar from './components/NavBar';
 
 
 
@@ -35,44 +35,31 @@ class App extends Component {
       },
       portfolio: {
         title: 'העבודות שלי',
+        section: null,
       },
       contact: {
         title: 'צרו קשר',
       }
     }
   }
-  state = { myDate: "05-03-2020" };
-
-
+  handleClick = (string)=>{
+    this.setState({portfolio:{section:string}});
+  }
   render() {
     return (
       <Router>
         <Container className="p-0" fluid={true}>
-
-          <Navbar className='border-bottom' bg="transparent" expand="lg">
-            <Navbar.Brand href="/">
-              <img
-                src={logo}
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-                alt="React Bootstrap logo"
-              />
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls='navbar-toggle' />
-            <Navbar.Collapse id="navbar-toggle">
-              <Nav className="ml-auto">
-                <Link className="nav-link" to="/">דף הבית</Link>
-                <Link className="nav-link" to="/portfolio">העבודות שלי</Link>
-                <Link className="nav-link" to="/contact">צרו קשר</Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
-
-          <Route path="/" exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text} />} />
-          <Route path="/portfolio" render={() => <PortfolioPage title={this.state.portfolio.title} />} />
+          <NavBar handleClick = {this.handleClick}/>
+          <Switch>
+          <Route path="/" exact render={() => <HomePage
+            title={this.state.home.title}
+            subtitle={this.state.home.subtitle}
+            text={this.state.home.text}
+            handleClick = {this.handleClick}
+             />} />
+          <Route path="/portfolio" exact render={() => <PortfolioPage title={this.state.portfolio.title} section={this.state.portfolio.section} handleClick={this.handleClick}/>} />
           <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
-
+          </Switch>
           <Footer />
         </Container>
       </Router>

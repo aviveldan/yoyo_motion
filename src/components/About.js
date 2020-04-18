@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron } from 'react-bootstrap';
+import { Jumbotron, Button } from 'react-bootstrap';
 import Figure from 'react-bootstrap/Figure';
 import yehonatan from '../images/yehonatan.jpg'
 function About() {
@@ -20,7 +20,7 @@ function About() {
             <h1 className="text-center" dir="rtl">ברוכים הבאים!</h1>
             <p className="text-center" dir="rtl">קוראים לי יהונתן ברי, אני עורך וידאו מקצועי שמתמחה בניו מדיה</p>
             <p className="text-center">
-                <button variant="primary" >הלקוחות שלי</button>
+                <Button variant="outline-success">למעבר ללקוחות שלי</Button>
             </p>
         </Jumbotron>
     );
